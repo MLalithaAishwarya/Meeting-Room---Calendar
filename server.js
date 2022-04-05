@@ -2,7 +2,6 @@ const express = require("express");
 var con = require("./connection");
 var expressSession = require("express-session");
 var flash = require("express-flash");
-const { roomData } = require("./controllers/calendarController");
 
 var app = express();
 

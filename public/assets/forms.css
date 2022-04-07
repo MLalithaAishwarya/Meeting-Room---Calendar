@@ -251,6 +251,10 @@ i[class="bi bi-person"] {
   margin-top: 14px;
 }
 
+tbody {
+  font-size: 20px;
+}
+
 .fc-button-group {
   font-size: 20px;
 }

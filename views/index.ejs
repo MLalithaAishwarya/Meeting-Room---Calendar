@@ -24,7 +24,7 @@
     <nav>
       <ul>
         <li>
-          <a href="signin">Signin</a>
+          <a href="signin">Sign In</a>
         </li>
       </ul>
     </nav>
@@ -49,9 +49,9 @@
             <form name="myForm" id="myForm" action="/index" method="post">
               <p>
                 <i class="bi bi-person"></i>
-                <input type="text" id="username" name="username" pattern="^[a-zA-Z][A-Za-z\s]*$"
-                  title="Names should start with characters only" placeholder="Username" autocomplete="off"
-                  required /><i class="validation"></i>
+                <input type="text" id="username" name="username" pattern="^[a-zA-Z][A-Za-z\s0-9]*$"
+                  title="Names can include characters & numbers"  placeholder="User name"  autocomplete="off" required /><i
+                  class="validation"></i>
               </p>
 
               <p>
@@ -63,7 +63,7 @@
               <p>
                 <span class="fa fa-eye-slash" id="pass-status" onClick="password()" aria-hidden="true"></span>
                 <i class="bi bi-key"></i>
-                <input type="password" id="password" name="password" placeholder="Password" pattern="[A-Za-z0-9]{8,16}"
+                <input type="password" id="password" name="password" placeholder="Password" pattern="[A-Za-z0-9@$!%*#?&^_-]{8,16}"
                   title="password must be in between 8 & 16 should contain characters and digits" autocomplete="off"
                   required />
                 <i class="validation"></i>
